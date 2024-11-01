@@ -1,0 +1,7 @@
+{
+    "instruction": "Read the question below carefully, and then choose an answer to the question.",
+    "first_input": "[Instruction]\n{instruction}",
+    "oneshot_input": "[Question]\n{question}\nAnswer Choices:\n{option_string}\n\n[Answer]\n",
+    "oneshot_output": "The correct answer is {given_answer}.",
+    "final_output": "The correct answer is"
+}

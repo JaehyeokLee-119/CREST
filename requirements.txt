@@ -1,0 +1,10 @@
+torch==2.4.0
+trl==0.11.4
+tqdm==4.66.5
+tiktoken==0.7.0
+accelerate==0.33.0
+transformers==4.44.0
+vllm==0.5.4
+wandb==0.17.7
+fire==0.6.0
+peft==0.12.0

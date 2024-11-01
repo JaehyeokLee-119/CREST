@@ -1,0 +1,9 @@
+{
+    "instruction": "Read the question below carefully, write the intermediate reasoning steps about the problem and then choose an answer to the question.",    "Instruction_consistency_prediction": "Read the question below carefully, write the intermediate reasoning steps about the problem and then choose an answer. You will be given one of the choices. You must say the given choice is whether \"the correct answer\" or \"not the correct answer\". and You must analyze the question and the choices, and provide a logically organized reasoning steps that can be an explanation of why your answer is the most appropriate.\n",
+    "first_input": "[Instruction]\n{instruction}",
+    "oneshot_input": "[Question]\n{question}\nAnswer Choices:\n{option_string}\n\n[Rationale]\nLet's think step by step.\n",
+    "oneshot_output": "{rationale}\n\n[Answer]\nTherefore, the correct answer is {given_answer}.",
+    "final_output": "",
+    "prediction_input": "{rationale}\n\n[Answer]\nTherefore, the correct answer is",
+    "input_consistency": "[Question]\n{question}\nAnswer Choices:\n{option_string}\nIs a given choice {target_option} the correct answer?\n\n[Rationale]\nLet's think step by step.\n{rationale}\n\n[Answer]\nTherefore, ({target_option}) is"
+}

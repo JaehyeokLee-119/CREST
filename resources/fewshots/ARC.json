@@ -1,0 +1,63 @@
+[
+    {
+        "id_string":"MCAS_8_2015_16",
+        "context":null,
+        "question":"A scientist is comparing two body cells of a multicellular organism. Which of the following is most likely identical?",
+        "answers":["shape of cell walls","number of mitochondria","shape of cell membranes","number of chromosomes"],
+        "given_answer":"D",
+        "label":"D",
+        "rationale":"A cell is a fundamental unit of life. A living organism is composed of cells, and the body cells of the same organism are all identical. Therefore, A, B, and C are all not identical.\nA cell has a unique number of chromosomes, and therefore D is identical.\n",
+        "input_string":"",
+        "generation":" D.",
+        "prediction":"D",
+        "prediction_wo_rationale":"D",
+        "consistency_score":4
+    },
+    {
+        "id_string":"MCAS_2016_8_13",
+        "context":null,
+        "question":"Earth's core is primarily composed of which of the following materials?",
+        "answers":["basalt","iron","magma","quartz"],
+        "given_answer":"B",
+        "label":"B",
+        "rationale":"Earth's core is the dense innermost part of the planet.\nIt is made of iron and nickel, and is very hot.\nIt is not basalt, not magma, not quartz.\n",
+        "input_string":"",
+        "generation":" B.",
+        "prediction":"B",
+        "prediction_wo_rationale":"B",
+        "consistency_score":4
+    },
+    {
+        "id_string":"Mercury_7016590",
+        "context":null,
+        "question":"Scientists use the term \"light year\" to describe",
+        "answers":["how fast light travels in space.","the distance light travels in one year.","how large the diameters of different stars are.","the time it takes the Sun to move through the galaxy."],
+        "given_answer":"B",
+        "label":"B",
+        "rationale":"The light year is a unit of distance that is equal to the distance light travels in one year.\nSo, we can say that the light year is the distance light travels in one year.\n",
+        "input_string":"",
+        "generation":" B.",
+        "prediction":"B",
+        "prediction_wo_rationale":"B",
+        "consistency_score":4
+    },
+    {
+        "id_string":"ACTAAP_2007_7_16",
+        "context":null,
+        "question": "Which occurs as a result of Earth's tilt on its rotating axis?",
+        "answers": [
+            "movement of the tides",
+            "prevalent or trade winds",
+            "seasonal changes in the climate",
+            "light and dark changes of day and night"
+        ],
+        "given_answer": "C",
+        "label": "C",
+        "rationale": "The axial tilt is the angle between the axis of rotation and a line perpendicular to the Earth's orbit around the Sun.\nAs a result, the amount of solar radiation received by the Earth varies with season, resulting in seasonal changes in climate.\n",
+        "input_string": "[Instruction and Question]\nRead the question below carefully, write the intermediate reasoning steps about the problem and then choose an answer. You must analyze the question and the choices, and provide a logically organized reasoning steps that can be an explanation of why your answer is the most appropriate.\n\n<Question> Which occurs as a result of Earth's tilt on its rotating axis?\nA. movement of the tides\nB. prevalent or trade winds\nC. seasonal changes in the climate\nD. light and dark changes of day and night\n\n\n[Rationale]\nThe axial tilt is the angle between the axis of rotation and a line perpendicular to the Earth's orbit around the Sun.\nAs a result, the amount of solar radiation received by the Earth varies with season, resulting in seasonal changes in climate.\nThat's why I think C is the correct answer.\n\n[Answer]\nTherefore, the answer is",
+        "generation": " C.",
+        "prediction": "C",
+        "prediction_wo_rationale": "C",
+        "consistency_score": 5
+    }
+]
