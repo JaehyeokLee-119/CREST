@@ -1,32 +1,33 @@
 # CREST
-Each directory has:
-- scripts: Bash scripts for running codes
-- resources: Pre-processed datasets, templates, and few-shot examples we used
-- src: source codes
-    - 1_rationale_generation: Source code for rationale generation and evaluation in CREST
-    - 2_supervised_fine_tuning: Source code for rationale filtering and supervised fine-tuning
-    - 3_preference_learning: Source code for preference learning
-    - analysis: FLASK rationale evaluation codes we used
+This repository contains the code for **Consistency-driven Rationale Evaluation for Self-Training (CREST)**, as presented in the paper "*Self-Training Meets Consistency: Improving LLMs’ Reasoning With Consistency-Driven Rationale Evaluation*".
 
-### How to run
+## Getting Started
 Python version: 3.12.2 <br>
-Ensure you have all necessary dependencies by installing the required packages listed in `requirements.txt`:
-
+To set up your environment, you’ll need Python 3.12.2. Use the following commands to create a virtual environment and install the required libraries. Once set up, follow the order of scripts in the 'scripts' directory to run CREST.
 ```bash
 conda create -n <ENV_NAME> python=3.12.2
 conda activate <ENV_NAME>
 pip install -r requirements.txt
-
 home=$(pwd)
 ```
-
+## Running CREST
 You can run CREST using Bash scripts located in the `/scripts` directory.
-- stage 1: rationale generation and evaluation
-- stage 2: supervised fine-tuning
-- stage 3: preference learning with DPO
+- `crest_stage_1.sh`: rationale generation and evaluation
+- `crest_stage_2.sh`: supervised fine-tuning with rationale filtering
+- `crest_stage_3.sh`: preference learning with DPO
+- `direct_fine-tune_stage_2.sh`: codes for the experiments of direct fine-tuning approaches
 
-The initial settings are configured as follows: data=ReClor and base_model=Llama 3 8B_model. 
-Please adjust the home directory path in each script file and modify the variables as needed for specific settings, such as the dataset or hyperparameters.
+Initial settings are configured with `data=ReClor` and `base_model=Llama 3 8B`. Make sure to update the home directory path in each script, as well as other variables (e.g., dataset, hyperparameters) as needed.
 
-Then, `outputs` directory will be generated, which contains generated rationales and their evaluation results.
-As the results of stage 2 and 3, `models` directory will be generated, which contains trained model from each stage.
+## Directory Structure
+The main directories include:
+- scripts: Contains bash scripts to run the code
+- resources: Holds pre-processed datasets, templates, and few-shot examples used in CREST
+- src: Source code directory
+    - `1_rationale_generation`: Code for rationale generation and evaluation
+    - `2_supervised_fine_tuning`: Code for rationale filtering and supervised fine-tuning
+    - `3_preference_learning`: Code for preference learning
+    - `analysis`: FLASK code used for rationale evaluation
+
+## Output
+After running CREST, an `outputs` directory will be created to store generated rationales and evaluation results. Following stages 2 and 3, a `models` directory will be generated, containing trained models from each stage.
