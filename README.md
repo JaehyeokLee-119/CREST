@@ -11,7 +11,7 @@ pip install -r requirements.txt
 home=$(pwd)
 ```
 ## Running CREST
-You can run CREST using Bash scripts located in the `/scripts` directory.
+You can run CREST using Bash scripts located in the `scripts` directory.
 - `crest_stage_1.sh`: rationale generation and evaluation
 - `crest_stage_2.sh`: supervised fine-tuning with rationale filtering
 - `crest_stage_3.sh`: preference learning with DPO
@@ -29,5 +29,4 @@ The main directories include:
     - `3_preference_learning`: Code for preference learning
     - `analysis`: FLASK code used for rationale evaluation
 
-## Output
 After running CREST, an `outputs` directory will be created to store generated rationales and evaluation results. Following stages 2 and 3, a `models` directory will be generated, containing trained models from each stage.
