@@ -30,3 +30,8 @@ The main directories include:
     - `analysis`: FLASK code used for rationale evaluation
 
 After running CREST, an `outputs` directory will be created to store generated rationales and evaluation results. Following stages 2 and 3, a `models` directory will be generated, containing trained models from each stage.
+
+## Citation
+
+```bibtex
+```
