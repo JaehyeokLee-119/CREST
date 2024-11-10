@@ -11,6 +11,8 @@ pip install -r requirements.txt
 home=$(pwd)
 ```
 ## Running CREST
+Prepare datasets. Sample formats are in the `resources/data` directory.
+
 You can run CREST using Bash scripts located in the `scripts` directory.
 - `crest_stage_1.sh`: rationale generation and evaluation
 - `crest_stage_2.sh`: supervised fine-tuning with rationale filtering
