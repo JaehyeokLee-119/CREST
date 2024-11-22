@@ -33,6 +33,9 @@ The main directories include:
 
 After running CREST, an `outputs` directory will be created to store generated rationales and evaluation results. Following stages 2 and 3, a `models` directory will be generated, containing trained models from each stage.
 
+## Acknowledgement
+This work was supported by Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (MSIT) (No. RS-2024-00509258, Global AI Frontier Lab)
+
 ## Citation
 
 ```bibtex
