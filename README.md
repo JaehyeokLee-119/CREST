@@ -1,6 +1,6 @@
 # CREST
 This repository contains the code for **Consistency-driven Rationale Evaluation for Self-Training (CREST)**.<br>
-**CREST** evaluates model-generated Chain-of-Thought rationales by checking whether they lead to consistent answers in follow-up questions. It then uses the evaluation results to train the model during supervised fine-tuning and preference learning.<br>
+**CREST** evaluates model-generated Chain-of-Thought rationales by checking whether they lead to consistent answers in follow-up questions. It then uses the evaluation results to train the model during supervised fine-tuning and preference learning.
 This process improves both the model's reasoning performance and its rationale generation ability.
 <br>
 My paper [*Self-Training Meets Consistency: Improving LLMs’ Reasoning with Consistency-Driven Rationale Evaluation*](https://arxiv.org/abs/2411.06387) is accepted to **NAACL 2025 main conference**.
