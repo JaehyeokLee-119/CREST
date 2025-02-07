@@ -1,5 +1,9 @@
 # CREST
-This repository contains the code for **Consistency-driven Rationale Evaluation for Self-Training (CREST)**, as presented in the paper "[*Self-Training Meets Consistency: Improving LLMs’ Reasoning With Consistency-Driven Rationale Evaluation*](https://arxiv.org/abs/2411.06387)".
+This repository contains the code for **Consistency-driven Rationale Evaluation for Self-Training (CREST)**.<br>
+**CREST** evaluates model-generated Chain-of-Thought rationales by checking whether they lead to consistent answers in follow-up questions. It then uses the evaluation results to train the model during supervised fine-tuning and preference learning.<br>
+This process improves both the model's reasoning performance and its rationale generation ability.
+<br>
+My paper [*Self-Training Meets Consistency: Improving LLMs’ Reasoning with Consistency-Driven Rationale Evaluation*](https://arxiv.org/abs/2411.06387) is accepted to **NAACL 2025 main conference**.
 
 ## Getting Started
 Python version: 3.12.2 <br>
@@ -39,10 +43,10 @@ This work was supported by Institute of Information & communications Technology 
 ## Citation
 
 ```bibtex
-@misc{lee2024selftrainingmeetsconsistencyimproving,
-      title={Self-Training Meets Consistency: Improving LLMs' Reasoning With Consistency-Driven Rationale Evaluation}, 
+@misc{lee2025selftrainingmeetsconsistencyimproving,
+      title={Self-Training Meets Consistency: Improving LLMs' Reasoning with Consistency-Driven Rationale Evaluation}, 
       author={Jaehyeok Lee and Keisuke Sakaguchi and JinYeong Bak},
-      year={2024},
+      year={2025},
       eprint={2411.06387},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
