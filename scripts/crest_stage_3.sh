@@ -9,7 +9,7 @@ python generate_pair_data.py \
     --output_dir ${home}/outputs/data_ReClor_stage3 \
     --template_file_path ${home}/resources/templates/template_ReClor_inference_CoT.json
 
-gpu=1
+gpu=0
 key='TEST'
 
 SFT_model='' # Enter the path of the SFT model (trained in stage 2)
