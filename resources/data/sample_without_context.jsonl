@@ -1,5 +1,0 @@
-{"id_string":"swoc1","data_name":"sample_without_context","context":null,"question":"What is the 1th character in 'sample sentence'?","answers":["s","c","f","e"],"label":"A","others":null}
-{"id_string":"swoc2","data_name":"sample_without_context","context":null,"question":"What is the 2th character in 'sample sentence'?","answers":["s","f","a","e"],"label":"C","others":null}
-{"id_string":"swoc3","data_name":"sample_without_context","context":null,"question":"What is the 3th character in 'sample sentence'?","answers":["s","a","e","m"],"label":"D","others":null}
-{"id_string":"swoc4","data_name":"sample_without_context","context":null,"question":"What is the 4th character in 'sample sentence'?","answers":["s","a","p","f"],"label":"C","others":null}
-{"id_string":"swoc5","data_name":"sample_without_context","context":null,"question":"What is the 5th character in 'sample sentence'?","answers":["s","l","f","e"],"label":"B","others":null}
