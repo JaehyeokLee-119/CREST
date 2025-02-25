@@ -71,7 +71,7 @@ def main(
     tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = padding_side
     
-    prompt_list = generate_prompt_train(train_data, tokenizer, instruction=instruction, template=template, test=True)
+    prompt_list = generate_prompt_train(train_data, tokenizer, instruction=instruction, template=template, test=False)
     os.makedirs(output_dir, exist_ok=True)
     json.dump(prompt_list, open(os.path.join(output_dir,"training_prompt_list.json"), "w"), indent=4)
     print(f"Prompt list saved at {os.path.join(output_dir, 'training_prompt_list.json')}")
