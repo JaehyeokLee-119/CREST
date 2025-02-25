@@ -6,7 +6,7 @@ train_data=${home}/resources/data/ReClor-train.jsonl
 fewshot_sample=${home}/resources/fewshots/ReClor.json
 output_directory=${home}/outputs/data_ReClor
 template=${home}/resources/templates/template_ReClor_inference_CoT.json
-N=1
+N=16
 gpu=0
 
 CUDA_VISIBLE_DEVICES=${gpu} python rationale_generation.py \
