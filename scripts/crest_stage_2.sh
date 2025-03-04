@@ -8,8 +8,8 @@ base_model_name=meta-llama/Meta-Llama-3-8B
 
 gpu=0
 epoch=4
-lr=5e-5
-threshold=3 # threshold = F-t (Num of follow-up questions - tolerance)
+lr=8e-4
+threshold=1 # threshold = F-t (Num of follow-up questions - tolerance)
 key='WANDB project name'
 
 python filtering.py \
