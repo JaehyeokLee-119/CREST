@@ -3,7 +3,7 @@ This repository contains the code for **Consistency-driven Rationale Evaluation 
 **CREST** evaluates model-generated Chain-of-Thought rationales by checking whether they lead to consistent answers in follow-up questions. It then uses the evaluation results to train the model during supervised fine-tuning and preference learning.
 This process improves both the model's reasoning performance and its rationale generation ability.
 <br>
-My paper [*Self-Training Meets Consistency: Improving LLMs’ Reasoning with Consistency-Driven Rationale Evaluation*](https://arxiv.org/abs/2411.06387) is accepted to **NAACL 2025 main conference**.
+My paper [*Self-Training Meets Consistency: Improving LLMs’ Reasoning with Consistency-Driven Rationale Evaluation*](https://aclanthology.org/2025.naacl-long.528) is accepted to **NAACL 2025 main conference**.
 
 ## Getting Started
 Python version: 3.12.2 <br>
@@ -43,13 +43,22 @@ This work was supported by Institute of Information & communications Technology 
 ## Citation
 
 ```bibtex
-@misc{lee2025selftrainingmeetsconsistencyimproving,
-      title={Self-Training Meets Consistency: Improving LLMs' Reasoning with Consistency-Driven Rationale Evaluation}, 
-      author={Jaehyeok Lee and Keisuke Sakaguchi and JinYeong Bak},
-      year={2025},
-      eprint={2411.06387},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2411.06387}, 
+@inproceedings{lee-etal-2025-self,
+    title = "Self-Training Meets Consistency: Improving {LLM}s' Reasoning with Consistency-Driven Rationale Evaluation",
+    author = "Lee, Jaehyeok  and
+      Sakaguchi, Keisuke  and
+      Bak, JinYeong",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-long.528/",
+    pages = "10519--10539",
+    ISBN = "979-8-89176-189-6",
+    abstract = "Self-training approach for large language models (LLMs) improves reasoning abilities by training the models on their self-generated rationales. Previous approaches have labeled rationales that produce correct answers for a given question as appropriate for training. However, a single measure risks misjudging rationale quality, leading the models to learn flawed reasoning patterns. To address this issue, we propose CREST (Consistency-driven Rationale Evaluation for Self-Training), a self-training framework that further evaluates each rationale through follow-up questions and leverages this evaluation to guide its training. Specifically, we introduce two methods: (1) filtering out rationales that frequently result in incorrect answers on follow-up questions and (2) preference learning based on mixed preferences from rationale evaluation results of both original and follow-up questions. Experiments on three question-answering datasets using open LLMs show that CREST not only improves the logical robustness and correctness of rationales but also improves reasoning abilities compared to previous self-training approaches."
 }
 ```
